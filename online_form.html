@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <style>label {padding-top: 10px;}</style>
+        <title>Online Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="" action="index.html" method="post">
+                <h1>Part One – Your Personal Details</h1>
+
+                <div class="form-group">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_title">Title (Mr, Mrs, etc)</label>
+                            <input type="text" class="form-control" name="applicant_title">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_gender">Sex</label>
+                            <select class="form-control" name="applicant_gender">
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_first_name">First Name</label>
+                            <input type="text" class="form-control" name="applicant_first_name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_last_name">Last Name</label>
+                            <input type="text" class="form-control" name="applicant_last_name">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="applicant_address">Address</label>
+                    <input type="text" class="form-control" name="applicant_address">
+                    <label for="applicant_post_code">Post Code</label>
+                    <input type="text" class="form-control" name="applicant_post_code">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_phone_one">Phone</label>
+                            <input type="text" class="form-control" name="applicant_phone_one">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_phone_one_type">Phone Type</label>
+                            <select class="form-control" name="applicant_phone_one_type">
+                                <option value="mobile">Mobile</option>
+                                <option value="landline">Landline</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_phone_two">Other Phone</label>
+                            <input type="text" class="form-control" name="applicant_phone_two">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_phone_two_type">Other Phone Type</label>
+                            <select class="form-control" name="applicant_phone_two_type">
+                                <option value="mobile">Mobile</option>
+                                <option value="landline">Landline</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="applicant_email">Email Address</label>
+                    <input type="email" class="form-control" name="applicant_email">
+                    <label for="applicant_email">NIN Number</label>
+                    <input type="email" class="form-control" name="applicant_email">
+                </div>
+
+                <div class="form-group">
+                    <label for="applicant_referrer">How did you hear about this job?</label>
+                    <select class="form-control" name="applicant_referrer">
+                        <optgroup label="Search Engine">
+                            <option value="google">Google</option>
+                            <option value="other_search_engine">Other Search Engine</option>
+                            <option value="company">Company Website</option>
+                        </optgroup>
+                        <optgroup label="Website">
+                            <option value="recruit_zone">www.recruit-zone.com</option>
+                            <option value="indeed">www.indeed.co.uk</option>
+                            <option value="other_website">Other Website</option>
+                        </optgroup>
+                        <optgroup label="Document">
+                            <option value="leaflet">Leaflet</option>
+                            <option value="newspaper_advert">Newspaper Advert</option>
+                            <option value="jobcentre">Jobcentre</option>
+                        </optgroup>
+                        <optgroup label="From Someone">
+                            <option value="refer_a_friend">Refer a Friend</option>
+                            <option value="word_of_mouth">Word of Mouth</option>
+                            <option value="Other">Other</option>
+                        </optgroup>
+                    </select>
+
+                    <br>
+                    <label for="applicant_other_referrer"><i>If you chose other, please specify</i></label>
+                    <input type="text" class="form-control" name="applicant_other_referrer">
+
+                    <label for="applicant_worker_referrer">If you were told about this job by someone that works for us, please tell us their name</label>
+                    <input type="text" class="form-control" name="applicant_worker_referrer">
+
+                    <br>
+                    <label for="applicant_has_worker_relative">Do any other of your close friends or relatives already work for us?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_worker_relative" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_worker_relative" value="no">
+                        <br><br>
+                    </div>
+
+
+                    <label for="applicant_worker_referrer_name"><i>If you answered 'yes', please give their names</i></label>
+                    <input type="text" class="form-control" name="applicant_worker_relative_name">
+
+                    <br>
+                    <label for="applicant_is_legally_entitled">Can you prove that you are legally entitled to work in the UK?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_is_legally_entitled" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_is_legally_entitled" value="no">
+                        <br><br>
+                    </div>
+
+
+                    <label for="applicant_legal_entitlement_docs"><i>If you answered 'yes', what document/s will you provide to prove this?</i></label>
+                    <input type="text" class="form-control" name="applicant_legal_entitlement_docs">
+
+                    <br>
+                    <label for="applicant_has_care_support_role">Have you worked recently in a care support role?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_care_support_role" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_care_support_role" value="no">
+                        <br><br>
+                    </div>
+
+                    <label for="applicant_legal_entitlement_docs"><i>If you answered 'yes', what was your standard hourly rate of pay?</i></label>
+                    <input type="text" class="form-control" name="applicant_legal_entitlement_docs">
+                </div>
+
+                <br><hr>
+                <h1>Part Two – Your Availability</h1>
+
+                <div class="form-group">
+                    <label for="applicant_earliest_date">What is the earliest date you could start work with us?</label>
+                    <input type="text" class="form-control" name="applicant_earliest_date">
+
+                    <label for="applicant_has_holidays_booked">Do you have any holidays etc. booked?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_holidays_booked" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_holidays_booked" value="no">
+                        <br><br>
+                    </div>
+
+                    <label for="applicant_holiday_dates">If you selected <i>Yes</i>, please list the holiday dates below:</label>
+                    <input type="text" class="form-control" name="applicant_holiday_dates">
+
+                    <label for="applicant_has_vehicle">Do you have the use of your own vehicle for work?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_vehicle" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_vehicle" value="no">
+                        <br><br>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <p>Please indicate when you would usually be available for work:</p>
+                    <table style="width: 100%; border: 1px solid black;" border=>
+                        <th>
+                            <!-- <td>&nbsp</td> -->
+                            <td>Morning</td>
+                            <td>Lunchtime</td>
+                            <td>Teatime</td>
+                            <td>Evening</td>
+                        </th>
+                        <tr>
+                            <td>Monday</td>
+                            <td><input type="checkbox" name="applicant_is_available_monday_morning"></td>
+                            <td><input type="checkbox" name="applicant_is_available_monday_lunchtime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_monday_teatime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_monday_evening"></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td><input type="checkbox" name="applicant_is_available_tuesday_morning"></td>
+                            <td><input type="checkbox" name="applicant_is_available_tuesday_lunchtime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_tuesday_teatime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_tuesday_evening"></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td><input type="checkbox" name="applicant_is_available_wednesday_morning"></td>
+                            <td><input type="checkbox" name="applicant_is_available_wednesday_lunchtime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_wednesday_teatime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_wednesday_evening"></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td><input type="checkbox" name="applicant_is_available_thursday_morning"></td>
+                            <td><input type="checkbox" name="applicant_is_available_thursday_lunchtime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_thursday_teatime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_thursday_evening"></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td><input type="checkbox" name="applicant_is_available_friday_morning"></td>
+                            <td><input type="checkbox" name="applicant_is_available_friday_lunchtime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_friday_teatime"></td>
+                            <td><input type="checkbox" name="applicant_is_available_friday_evening"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="form-group">
+                    <h1>Part Three – your skills and qualifications</h1>
+                    <p>Please tell us about the languages you can speak and/or write: </p>
+
+                    <label for="applicant_first_language">Language: </label>
+                    <input type="text" class="form-control" name="applicant_first_language">
+                    <table style="width: 100%;">
+                        <th>
+                            <!-- <td>&nbsp</td> -->
+                            <td>Speak</td>
+                            <td>Write</td>
+                            <td>Basic</td>
+                            <td>Competent</td>
+                            <td>Advanced</td>
+                        </th>
+                        <tr>
+                            <td>Skill Level</td>
+                            <td><input type="radio" name="applicant_first_language_level" value="speak"></td>
+                            <td><input type="radio" name="applicant_first_language_level" value="write"></td>
+                            <td><input type="radio" name="applicant_first_language_level" value="basic"></td>
+                            <td><input type="radio" name="applicant_first_language_level" value="competent"></td>
+                            <td><input type="radio" name="applicant_first_language_level" value="advanced"></td>
+                        </tr>
+                    </table>
+
+                    <label for="applicant_second_language">Language: </label>
+                    <input type="text" class="form-control" name="applicant_second_language">
+                    <table style="width: 100%;">
+                        <th>
+                            <!-- <td>&nbsp</td> -->
+                            <td>Speak</td>
+                            <td>Write</td>
+                            <td>Basic</td>
+                            <td>Competent</td>
+                            <td>Advanced</td>
+                        </th>
+                        <tr>
+                            <td>Skill Level</td>
+                            <td><input type="radio" name="applicant_second_language_level" value="speak"></td>
+                            <td><input type="radio" name="applicant_second_language_level" value="write"></td>
+                            <td><input type="radio" name="applicant_second_language_level" value="basic"></td>
+                            <td><input type="radio" name="applicant_second_language_level" value="competent"></td>
+                            <td><input type="radio" name="applicant_second_language_level" value="advanced"></td>
+                        </tr>
+                    </table>
+
+                    <label for="applicant_third_language">Language: </label>
+                    <input type="text" class="form-control" name="applicant_third_language">
+                    <table style="width: 100%;">
+                        <th>
+                            <!-- <td>&nbsp</td> -->
+                            <td>Speak</td>
+                            <td>Write</td>
+                            <td>Basic</td>
+                            <td>Competent</td>
+                            <td>Advanced</td>
+                        </th>
+                        <tr>
+                            <td>Skill Level</td>
+                            <td><input type="radio" name="applicant_third_language_level" value="speak"></td>
+                            <td><input type="radio" name="applicant_third_language_level" value="write"></td>
+                            <td><input type="radio" name="applicant_third_language_level" value="basic"></td>
+                            <td><input type="radio" name="applicant_third_language_level" value="competent"></td>
+                            <td><input type="radio" name="applicant_third_language_level" value="advanced"></td>
+                        </tr>
+                    </table>
+
+                    <label for="applicant_has_nvq">Do you have an NVQ/QCF level 2 (or above) in Health & Social Care?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_nvq" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_nvq" value="no">
+                        <br><br>
+                    </div>
+
+                    <label for="applicant_has_completed_certificate">Have you completed the Care Certificate (England only)?</label>
+                    <div>
+                        Yes <input type="radio" name="applicant_has_completed_certificate" value="yes"> &nbsp &nbsp
+                        No <input type="radio" name="applicant_has_completed_certificate" value="no">
+                        <br><br>
+                    </div>
+
+                    <label for="applicant_other_relevant_qualification">Please tell us about any other relevant formal qualifications you have achieved (including any Maths or English qualifications):</label>
+                    <textarea class="form-control" name="applicant_other_relevant_qualification">
+                    </textarea>
+
+                    <label for="applicant_left_fulltime_education">Have you completed the Care Certificate (England only)?</label>
+                    <div>
+                        Month <input type="text" name="applicant_month_left_fulltime_education" value=""> &nbsp &nbsp
+                        Year <input type="text" name="applicant_year_left_fulltime_education" value="">
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h1>Part Five – your referees </h1>
+                    <p>Please provide the details of four people that we can write to for a reference.  The first of these people must be your current or most recent employer.  The other referees will ideally also be your most recent previous employers. </p>
+                    <p>If you cannot provide the details of four previous employers, you may substitute one or more of these with a referee who was a former tutor or teacher when you were in formal education.</p>
+                    <p>If you cannot provide details of a teacher or tutor, we may accept a personal reference from a person of professional standing (e.g. a doctor, lawyer, accountant, recognised religious leader or teacher) who knows you, either professionally or personally. </p>
+                    <p><b>You must not give the names of friends or relatives or colleagues that are/were not senior to you as referees. All references will be verified. </b></p>
+
+                    <h2>First Referee (should be current or most recent employer)</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_first_referee_name">First Name</label>
+                            <input type="text" class="form-control" name="applicant_first_referee_name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_first_referee_position">Position</label>
+                            <input type="text" class="form-control" name="applicant_first_referee_position">
+                        </div>
+                    </div>
+
+                    <label for="applicant_first_referee_organization">Name of organisation, school or college</label>
+                    <input type="text" class="form-control" name="applicant_first_referee_organization">
+
+                    <label for="applicant_first_referee_address">Address and post code</label>
+                    <input type="text" class="form-control" name="applicant_first_referee_organization">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_first_referee_phone">Phone</label>
+                            <input type="text" class="form-control" name="applicant_first_referee_phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_first_referee_email">Email</label>
+                            <input type="email" class="form-control" name="applicant_first_referee_email">
+                        </div>
+                    </div>
+
+                    <br><hr>
+
+                    <h2>Second Referee</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_second_referee_name">First Name</label>
+                            <input type="text" class="form-control" name="applicant_second_referee_name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_second_referee_position">Position</label>
+                            <input type="text" class="form-control" name="applicant_second_referee_position">
+                        </div>
+                    </div>
+
+                    <label for="applicant_second_referee_organization">Name of organisation, school or college</label>
+                    <input type="text" class="form-control" name="applicant_second_referee_organization">
+
+                    <label for="applicant_second_referee_address">Address and post code</label>
+                    <input type="text" class="form-control" name="applicant_second_referee_organization">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="applicant_second_referee_phone">Phone</label>
+                            <input type="text" class="form-control" name="applicant_second_referee_phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="applicant_second_referee_email">Email</label>
+                            <input type="email" class="form-control" name="applicant_second_referee_email">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </body>
+</html>
