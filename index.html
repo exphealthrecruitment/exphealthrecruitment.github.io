@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <link href="https://fonts.googleapis.com/css?family=Bellefair|Roboto|Bree+Serif|Lora|Roboto+Condensed|Source+Code+Pro" rel="stylesheet">
+<!--        <link rel="stylesheet" type="text/css" href="fonts/webfontkit-20200106-151050/stylesheet.css" />-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <style>
@@ -14,6 +15,7 @@
                 font-style: normal;
 
             }
+
             body {
                 background-color: white;
                 font-family: Dyuthi;
@@ -22,7 +24,7 @@
             div.section_1_container {
                 background-color: #8cc99cff;
                 width: 100%;
-                padding: 2%;
+                padding: 2% 2% 2% 0;
             }
             div.section_1_container {
                 color: white;
@@ -30,9 +32,27 @@
             div.section_1_header{
                 color: #003380ff;
                 font-size: 20px;
+                min-height: 80px;
+            }
+            div.section_1_row{
+                min-height: 80px;
+            }
+            img.logo{
+                height: 70px;
+                width: 150px;
+                margin: auto;
+            }
+            p.nav-link{
+                margin: auto;
+            }
+            div.nav-link{
+                margin: auto;
+            }
+            div.link-container{
+                padding-left: 10px;
             }
             div.company_title {
-                padding-top: 4%;
+                padding-top: 2%;
                 text-align: center;
                 font-size: 40px;
             }
@@ -41,9 +61,6 @@
                 font-size: 20px;
                 font-style: italic;
                 font-family: Arial;
-            }
-            img.logo {
-                width: 10%;
             }
             .blue-font{
                 color: #003380ff;
@@ -106,16 +123,16 @@
                 background-color: #8cc99cff;
                 color: white;
                 padding-top: 4%;
-            }
-            .list-heading{
-                color: #003380ff;
-                font-family: Dyuthi;
-                font-size: 25px;
-
-            }
-            ul{
                 font-family: Arial;
                 font-size: 18px;
+                /*font-weight: bold;*/
+            }
+            .list-heading{
+                color: white;
+                font-family: Arial;
+                font-size: 25px;
+                font-weight: bold;
+
             }
             a.nav-links {
                 color: #003380ff;
@@ -123,18 +140,45 @@
             a {
                 color: white;
             }
+            table {
+                border-width: 0;
+            }
+            td{
+                vertical-align: top;
+                padding-bottom: 5%;
+            }
+            td.value{
+                padding-left: 10%;
+            }
+            hr.blue-line{
+                border-color: #efefef;
+            }
 
         </style>
     </head>
     <body>
         <div class="section_1_container">
             <div class="section_1_header container-fluid">
-                <div class="row">
-                    <div class="col col-md-auto">Logo</div>
-                    <div class="col col-md-auto"><a href="#" class="nav-links">Home</a></div>
-                    <div class="col col-md-auto"><a href="#about-us" class="nav-links">About Us</a></div>
-                    <div class="col col-md-auto"><a href="#" class="nav-links">Contact Us</a></div>
-                    <div class="col"></div>
+                <div class="row section_1_row">
+                    <div class="col col-12 col-sm-12 col-md-4 col-lg-1 col-xl-1 nav-link logo-container">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col"><img src="images/logo.png" class="logo" /></div>
+                            <div class="col"></div>
+                        </div>
+
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-8 col-lg-11 col-xl-11 col-lg-11 nav-link link-container">
+                       <div class="row">
+                        <div class="col col-md-auto">&nbsp;</div>
+                        <div class="col col-md-auto"><p class="nav-link"><a href="#" class="nav-links">Home</a></p></div>
+                        <div class="col col-md-auto"><p class="nav-link"><a href="#about-us" class="nav-links">About Us</a></p></div>
+                        <div class="col col-md-auto"><p class="nav-link"><a href="#contact-us" class="nav-links">Contact Us</a></p></div>
+                        <div class="col col-md-auto">&nbsp;</div>
+                    </div>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -152,11 +196,11 @@
                             Health Workers<br>
                             <span class="blue-font">Connection</span><br>
                             <span class="blue-font">Platform</span><br>
-                            <a href="/online_form.html"><button>APPLY</button></a>
+                            <a href="/apply"><button>APPLY</button></a>
                         </div>
 
                     </div>
-                    <div class="col col-md-8"><img src="./images/vector.png" class="vector-image"></div>
+                    <div class="col col-md-8"><img src="images/vector.png" class="vector-image"></div>
                 </div>
             </div>
         </div>
@@ -194,16 +238,43 @@
         <div class="section_4_container">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <hr class="blue-line">
                         <p>Copyright 2019 Experience Healthcare Recruitment Agency. All rights reserved.</p>
                         <p>Terms of Service & Privacy</p>
                     </div>
-                    <div class="col">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <hr class="blue-line">
                         <p class="list-heading">COMPANY</p>
                         <p><a href="#about-us">About Us</a></p>
                         <p><a href="#">Meet The Team</a></p>
                         <p><a href="#">What We Do</a></p>
                         <p><a href="#">Careers</a></p>
+
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <hr class="blue-line">
+                        <p class="list-heading" id="contact-us" name="contact-us"> CONTACT US</p>
+                        <table>
+                            <tr>
+                                <td><span>Email:</span></td>
+                                <td class="value"><i>beatrice@ehcrecuitment.com</i></td>
+                            </tr>
+                            <tr>
+                                <td><span>Tel:</span></td>
+                                <td class="value"><i>00447402090399</i></td>
+                            </tr>
+                            <tr>
+                                <td><span>Address:</span></td>
+                                <td class="value">
+                                    <i>
+                                        17 woodchurch court<br>
+                                        Blacksmith lane<br>
+                                        BR5 4EW
+                                    </i>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
